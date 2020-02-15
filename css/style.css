@@ -12,7 +12,7 @@ body {
   }
 
   section {
-    opacity: 0.8;
+    opacity: 0.7;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -180,8 +180,10 @@ section:hover {
 .skills__item {
     display: block;
     background: #d8d8d8;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     position: relative;
+    margin-top: 3px;
+    height: 6px;
 }
 
 .skills-title {
@@ -198,6 +200,8 @@ section:hover {
 .skills_bar {
     display: block;
     background: green;
+    height: 7px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;    
 }
 
 .skills_bar--one {
@@ -215,4 +219,45 @@ section:hover {
 }
 .skills_bar--five {
     width: 86%;
+}
+
+.example__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li.examle_item a {
+    display: flex;
+}
+
+.example__img {
+    width: 220px;
+    height: 150px;
+}
+
+.interests_items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.interests_item {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.interests_item i {
+    display: block;
+    font-size: 3em;
+    color: var(--main-bg-color);
+    margin-bottom: 10px;
 }
