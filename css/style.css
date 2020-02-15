@@ -215,31 +215,66 @@ section:hover {
     display: block;
     background: green;
     height: 7px;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;    
+
 }
 
 .skills_bar--one {
     width: 85%;
+    float: left;
+    animation: animateone 3s linear forwards;
+
 }
 
 .skills_bar--two {
     width: 50%;
     background: #cccc12;
+    animation: animateone 3s linear forwards;
 }
 .skills_bar--three {
     width: 50%;
     background: #cccc12;
+    animation: animateone 3s linear forwards;
+
 }
 .skills_bar--four {
-    width: 75%;
+    width: 30%;
+    background: #cc6c12;
+    animation: animateone 3s linear forwards;
+
+
+
 }
 .skills_bar--five {
-    width: 86%;
+    width: 50%;
+    animation: animateone 3s linear forwards;
+
+    background: #cccc12;
+
 }
 .skills_bar--six {
-    width: 30%;
+    width: 40%;
     background: #cc9b12;
+    animation: animateone 3s linear forwards;
+
 }
+.skills_bar--seven {
+    width: 60%;
+    animation: animateone 3s linear forwards;
+
+}
+.skills_bar--eight {
+    width: 86%;
+    animation: animateone 3s linear forwards;
+
+}
+.skills_bar--nine {
+    width: 30%;
+    background: #cc6c12;
+    animation: animateone 3s linear forwards;
+
+}
+
+
 .example__items {
     margin: 0;
     padding: 0;
@@ -321,3 +356,85 @@ li.examle_item a {
     opacity: 1.0;
     transform: scale(1.02);  
   }
+
+  @keyframes animateone {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+/* 
+  @keyframes animatetwo {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+
+  @keyframes animatethree{
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+
+  @keyframes animatefour {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+
+  @keyframes animatefive {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+
+  @keyframes animatesix {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+
+  @keyframes animateseven {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+
+  @keyframes animateeight {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+
+  @keyframes animatenine {
+    0% {
+      width: 0;
+    }
+    100% {
+      wion: 85%;
+    }
+  }
+   */
