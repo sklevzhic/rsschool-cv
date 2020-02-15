@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(119deg, rgba(255,255,255,1) 0%, rgba(88,88,88,0.05085784313725494) 24%, rgba(218,218,218,1) 100%);
+    cursor: pointer;
 }
 
 :root {
@@ -15,6 +16,10 @@ body {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+.wrapper-column {
+    display: flex
+}
+
 section:hover {
     opacity: 1;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;    
@@ -23,6 +28,20 @@ section:hover {
 .cv_title {
     margin-left: 60px;
 }
+
+
+.cv_title i {
+
+    width: 50px;
+    height: 50px;
+    background: var(--main-bg-color);
+    border-radius: 50%;
+    position: absolute;
+    margin: -9px 0 0 -58px;
+    padding: 12px 9px 10px;
+    color: white;
+}
+
 
 
 .cv {
@@ -86,16 +105,114 @@ section:hover {
 
 /* summary */
 
-
-.cv_title i {
-
-    width: 50px;
-    height: 50px;
-    background: var(--main-bg-color);
-    border-radius: 50%;
-    position: absolute;
-    margin: -9px 0 0 -58px;
-    padding: 12px 9px 10px;
+.cv_summary, .contacts {
+    padding: 0 15px;
+}
+.cv_summary h2, .contacts h2 {
+    margin-left: 15px;
 }
 
 
+/* contacts */
+
+.contacts__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contacts__item {
+    line-height: 1.8em;
+}
+
+.contacts__item i {
+    margin-right: 1em;
+    color: var(--main-bg-color);
+}
+
+/* education */
+
+.cv_education, .cv_work {
+    width: 50%;
+}
+
+.work__date, .work__organization, .work__vacancy {
+    margin: 0;
+}
+
+.work__items {
+    padding: 0;
+}
+
+.work__item {
+    position: relative;
+    list-style: none;
+    padding-left: 40px;
+    padding-bottom: 6px;
+}
+
+.work__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+    border: 7px solid gray;
+    left: 10px;
+    top: 0;
+}
+
+.work__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    background: gray;
+    left: 16px;
+}
+
+/* lines */
+
+.skills__item {
+    display: block;
+    background: #d8d8d8;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.skills-title {
+    position: absolute;
+    display: block;
+    top: -30px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.align-right {
+    float: right;
+}
+.skills_bar {
+    display: block;
+    background: green;
+}
+
+.skills_bar--one {
+    width: 60%;
+}
+
+.skills_bar--two {
+    width: 55%;
+}
+.skills_bar--three {
+    width: 65%;
+}
+.skills_bar--four {
+    width: 75%;
+}
+.skills_bar--five {
+    width: 86%;
+}
