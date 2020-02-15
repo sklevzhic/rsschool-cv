@@ -4,30 +4,25 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(119deg, rgba(255,255,255,1) 0%, rgba(88,88,88,0.05085784313725494) 24%, rgba(218,218,218,1) 100%);
-    cursor: pointer;
+    cursor: default;
 }
 
 :root {
     --main-bg-color: green;
   }
-
-  section {
-    opacity: 0.7;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
 .wrapper-column {
     display: flex
 }
 
-section:hover {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;    
-}
 
 .cv_title {
     margin-left: 60px;
+    text-transform: uppercase;
 }
+
+section:hover {
+    scale: 1.2;
+} 
 
 
 .cv_title i {
@@ -38,7 +33,7 @@ section:hover {
     border-radius: 50%;
     position: absolute;
     margin: -9px 0 0 -58px;
-    padding: 12px 9px 10px;
+    padding: 11px 12px 12px;
     color: white;
 }
 
@@ -65,7 +60,7 @@ section:hover {
     width: 700px;
     padding: 0 20px;
     overflow: hidden;
-    /* background: forestgreen */
+    padding-bottom: 20px;
 }
 
 .cv__photo-wrapper {
@@ -124,7 +119,20 @@ section:hover {
 
 .contacts__item {
     line-height: 1.8em;
+    opacity: .7;
 }
+
+.contacts__link {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.contacts__item:hover {
+    line-height: 1.8em;
+    opacity: 1;
+}
+
 
 .contacts__item i {
     margin-right: 1em;
@@ -177,6 +185,12 @@ section:hover {
 
 /* lines */
 
+.skills__items {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
 .skills__item {
     display: block;
     background: #d8d8d8;
@@ -205,14 +219,16 @@ section:hover {
 }
 
 .skills_bar--one {
-    width: 60%;
+    width: 85%;
 }
 
 .skills_bar--two {
-    width: 55%;
+    width: 50%;
+    background: #cccc12;
 }
 .skills_bar--three {
-    width: 65%;
+    width: 50%;
+    background: #cccc12;
 }
 .skills_bar--four {
     width: 75%;
@@ -220,7 +236,10 @@ section:hover {
 .skills_bar--five {
     width: 86%;
 }
-
+.skills_bar--six {
+    width: 30%;
+    background: #cc9b12;
+}
 .example__items {
     margin: 0;
     padding: 0;
@@ -261,3 +280,44 @@ li.examle_item a {
     color: var(--main-bg-color);
     margin-bottom: 10px;
 }
+
+.cv__right:hover > section,  .cv__right:hover > div > section {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;  
+}
+    
+.cv__right:hover > section:hover, .cv__right:hover > div > section:hover {
+    opacity: 1.0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;  
+  }
+
+  
+.example__items:hover > .examle_item {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;  
+}
+    
+.example__items:hover > .examle_item:hover {
+    opacity: 1.0;
+    transform: scale(1.02);  
+  }
+
+  .interests_items:hover > .interests_item {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;  
+}
+    
+.interests_items:hover > .interests_item:hover {
+    opacity: 1.0;
+    transform: scale(1.1);  
+  }
+
+  .skills__items:hover > .skills__item {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;  
+}
+    
+.skills__items:hover > .skills__item:hover {
+    opacity: 1.0;
+    transform: scale(1.02);  
+  }
