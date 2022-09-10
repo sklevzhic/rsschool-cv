@@ -4,11 +4,11 @@
 
 ## Contacts:
 
-|               |               |
-| ------------- | ------------- |
-| Phone         | +375297559056 |
-| E-mail        | sklevzhic@gmail.com  |
-| Telegram      | @sklevzhic    |
+|               |                     |
+| ------------- |---------------------|
+| Phone         | +375291095895       |
+| E-mail        | sklevzhic@gmail.com |
+| Telegram      | @sklevzhic          |
 
 
 ## Summary:
@@ -17,10 +17,16 @@ The purpose of training: obtaining practical experience in front-end development
 Lack or gaps in knowledge compensate for the desire to study the necessary technologies. I strive to constantly develop my professional and personal qualities.
 
 ## Skills:
-    Languages: HTML5, CSS3, JavaScript
-    Version control system: Git 
-    Graphics editor: Photoshop
-    CMS: Wordpress
+* HTML
+* CSS
+* Javascript
+* React
+* Redux
+* Typescript 
+* Webpack
+* Git
+* Figma
+* Photoshop
 
 ## Code example:
     [https://sklevzhic.github.io/CV-Portfoilio/](https://sklevzhic.github.io/CV-Portfoilio/)
